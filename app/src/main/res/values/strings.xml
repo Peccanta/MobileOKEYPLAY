@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">OKEYPLAY</string>
+    <string name="title_activity_login">Авторизация</string>
+    <string name="title_main">Главная</string>
+    <string name="title_catalog">Каталог</string>
+    <string name="title_cart">Корзина</string>
+    <string name="title_profile">Профиль</string>
+    <string name="Hogwarts">Однопользовательский ролевой экшн с открытым миром и несколькими вариантами сложности и доступности. В школе чародейства и волшебства Хогвартса можно будет посещать занятия, такие как заклинания, защита от темных искусств, травология и зельеварение.</string>
+
+</resources>

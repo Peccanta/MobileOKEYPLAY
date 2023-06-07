@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.login.LoginActivity">
+
+
+    <View
+        android:id="@+id/bg_auth"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:background="@color/nav_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title_auth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_medium"
+        android:text="АВТОРИЗАЦИЯ"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bg_auth"
+        app:layout_constraintEnd_toEndOf="@+id/bg_auth"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bg_auth" />
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="241dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bg_auth"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/imageView_email"
+        android:layout_width="320dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="110dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageLogo"
+        app:srcCompat="@drawable/input_email" />
+
+    <EditText
+        android:id="@+id/inputEmail"
+        android:layout_width="245dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="20dp"
+        android:background="@null"
+        android:ems="10"
+        android:fontFamily="@font/ubuntu"
+        android:hint="Почта"
+        android:inputType="textEmailAddress"
+        android:textColor="#000000"
+        android:textColorHint="#595959"
+        android:textColorLink="#000000"
+        android:textCursorDrawable="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_email"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_email"
+        app:layout_constraintTop_toTopOf="@+id/imageView_email" />
+
+    <ImageView
+        android:id="@+id/imageView_pass"
+        android:layout_width="320dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_email"
+        app:srcCompat="@drawable/input_pass" />
+
+    <EditText
+        android:id="@+id/inputPassword"
+        android:layout_width="245dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="20dp"
+        android:background="@null"
+        android:ems="10"
+        android:fontFamily="@font/ubuntu"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        android:textColorHint="#595959"
+        android:textColorLink="#000000"
+        android:textCursorDrawable="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_pass"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_pass"
+        app:layout_constraintTop_toTopOf="@+id/imageView_pass" />
+
+    <Button
+        android:id="@+id/buttonEnter"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:text="АВТОРИЗИРОВАТЬСЯ"
+        android:textColor="#000000"
+        android:textSize="19sp"
+        app:backgroundTint="#FFFFFF"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView_or"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView_or"
+        android:layout_width="320dp"
+        android:layout_height="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonReg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/or" />
+
+    <Button
+        android:id="@+id/buttonReg"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:text="ЗАРЕГИСТРИРОВАТЬСЯ"
+        android:textColor="#000000"
+        android:textSize="19sp"
+        app:backgroundTint="#FFFFFF"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
